@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Sherlocked",
+  "description": "This extension provides the Sherlocked search page. http://www.sherlock-ed.co",
+  "version": "1.6",
+  "author": "Mani Rangaswamy",
+  "minimum_chrome_version": "34",
+  "homepage_url": "https://www.sherlock-ed.co",
+
+  
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "search.html",
+    "default_title": "Sherlocked"
+  },
+  "permissions": [
+    "activeTab",
+    "http://sherlock-ed.co/",
+    "https://sherlockedstg.herokuapp.com/",
+	"https://fonts.googleapis.com/icon?family=Material+Icons",
+	"https://api.github.com/",
+	"http://localhost:3000/",
+	"https://github.com/"
+  ],
+  "web_accessible_resources": [
+    "icon.png"
+  ]
+}
