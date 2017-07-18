@@ -13,7 +13,8 @@ reallocation = '',
 count = 0,
 arrUrl = [],
 urlMap = {},
-arrDivId = [],	
+arrDivId = [],
+TOKEN='',	
 
 assign_handlers = function() {
 	$('#clear-btn').click(clear_search);
@@ -563,7 +564,7 @@ assign_handlers();
 			var repo_name = "";
 
 //Getting Repo name
-		var apiUrl = 'https://api.github.com/users/' + user_name + '/repos' + "?access_token=513e911a848d8b2bba1022e934bfbbd4709d1be5";
+		var apiUrl = 'https://api.github.com/users/' + user_name + '/repos' + "?access_token=<TOKEN>";
 
 		$.ajax({
 			url:apiUrl,
